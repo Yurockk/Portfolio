@@ -1,0 +1,246 @@
+* {
+    box-sizing:border-box;
+}
+
+
+:root{
+    --color1: #d89584;
+    --color2: #F4F4F4;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    height: 300px;
+}
+
+div.cover {
+    background: url(cover_overlay.png)no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+div.cover-contact {
+    /* background-color: #ff000080; */
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+div.cover-contact p:first-child {
+    margin-bottom: 12px;
+}
+div.cover-contact *{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+div.cover-contact *:hover{
+    color: var(--color1);
+}
+a.contact-button {
+    color: var(--color1);
+    border: 3px solid var(--color1);
+    padding: 8px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #00000060;
+    display: inline-block;
+    font-size: 14px;
+
+}
+a.contact-button:hover {
+    color: white;
+    border: 3px solid white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+img.cover-profile {
+    height: 120px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 35px;
+}
+
+.section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+div.section-grise1 {
+    background: url(triangle2white.svg) no-repeat center bottom -1px/100% ;
+    background-color: var(--color2);
+    padding-bottom: 100px;
+    text-align: center;
+}
+div.section-grise1 p {
+    color: #656565;
+    text-align:center;
+    font-size: 22px;
+    max-width: 500px;
+    display: inline-block;
+}
+div.section-grise2 {
+    background: url(triangle1white.svg) no-repeat center top/100% ;
+    background-color: var(--color2);
+    padding-top: 100px;
+}
+
+div.separateur {
+    background-color: #979797;
+    width: 150px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col40 {
+    width: 40%;
+}
+.col60 {
+    width: 60%;
+}
+.float-right {
+    float: right;
+}
+
+div.text-with-vertical-border {
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+div.text-with-vertical-border p {
+    margin-top: 0px;
+}
+
+div.barre-verticale {
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+
+div.colonne1 {
+    display: inline-block;
+    margin-right: 6%;
+}
+div.colonne { 
+    width: 47%;
+}
+
+div.frame {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0,0,0.10);
+}
+p.frame-title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+/* Portfolio */
+
+.portfolio-header {
+    height: 90px;
+    background-color: black;
+    background: url(cover.jpg) no-repeat top/cover;
+    position: relative;
+}
+.portfolio-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+h1.portfolio {
+    color: black;
+    font-size: 46px;
+    line-height: 1;
+    padding-top: 10px;
+}
+h2.portfolio {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+a.portfolio-back {
+    position: absolute;
+    color: var(--color1);
+    margin-left: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.portfolio-table {
+    margin-top: 30px;
+    display: block;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    img.cover-profile {
+        height: 90px;
+        margin-top: 75px;
+    }
+    h1 {
+        font-size: 42px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    div.cover p{
+        color: lightgray;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+}
